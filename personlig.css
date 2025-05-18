@@ -1,0 +1,460 @@
+/* Baseline styles – Mobile first */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Hvid boks med stor tekst */
+  .intro-box {
+    background-color: white;
+    padding: 100px 50px !important;
+    text-align: center;
+    
+  }
+  
+  .intro-box h1 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Mørkeblå boks */
+  .highlight-box {
+    background-color: #4C6773;
+    color: black;
+    padding: 40px 30px !important;
+    text-align: center;
+  }
+  
+  .highlight-box h2 {
+    font-size: 1.4rem !important;
+    margin: 0;
+  }
+
+  .info-box {
+    background-color: #6B99AE;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .info-box h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .info-box p {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .subscription {
+    padding: 40px 20px;
+    background-color: #fefefe;
+    color: #333;
+    margin-bottom: 59px;
+  }
+  
+  .subscription h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subscription ul {
+    padding-left: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .subscription li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  /* Kort-bokse */
+  .pricing-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+  }
+  
+  .card {
+    background-color: #6B99AE;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Hele boksen */
+.klippekort-wrapper {
+  margin: 40px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Blå top */
+.klippekort-top {
+  background-color: #6B99AE;
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.klippekort-top h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.klippekort-top p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Grå boks med prisinfo */
+.klippekort-bottom {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.klippekort-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.klippekort-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.klippekort-column p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* Note nederst */
+.klippekort-note {
+  font-size: 0.95rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.online-subscription {
+  background-color: #fefefe;
+  padding: 40px 20px;
+  color: #222;
+  text-align: left;
+}
+
+.online-subscription h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.online-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.online-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.online-content li {
+  margin-bottom: 1.2rem; /* mere luft mellem punkter */
+  line-height: 1.8;       /* højere linjeafstand */
+}
+
+/* PRISBOKS */
+.price-box {
+  margin: 40px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.price-header {
+  background-color: #4C6773;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.price-body {
+  padding: 24px 16px; /* øget top/bund-padding */
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+
+.online-disclaimer p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+
+.coaching-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.coaching-block {
+  text-align: left;
+}
+
+.coaching-block h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.coaching-block p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+
+
+.footer {
+  background-color: #3D7A95; 
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-socials img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.pricing-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pricing-header {
+  background-color: #6B99AE;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.pricing-header h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.pricing-box {
+  background-color: #F5F5F1;
+  padding: 40px 20px;
+}
+
+.pricing-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pricing-column {
+  text-align: center;
+}
+
+.pricing-column h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing-column p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Note-sektion under boksen */
+.pricing-note {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.pricing-note h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.pricing-note p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+
+.pricing-recommendation {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.pricing-recommendation h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.pricing-recommendation p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+  @media screen and (min-width: 768px) {
+    .intro-box h1 {
+      font-size: 2.8rem;
+    }
+  
+    .highlight-box h2 {
+      font-size: 2rem;
+    }
+  
+    .intro-box,
+    .highlight-box {
+      padding: 80px 100px;
+    }
+
+
+    .info-box {
+        padding: 60px 100px;
+      }
+    
+      .info-box h3 {
+        font-size: 1.8rem;
+      }
+    
+      .info-box p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .pricing-cards {
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+      .card {
+        width: 250px;
+      }
+
+
+      .klippekort-columns {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+      }
+    
+      .klippekort-column {
+        width: 220px;
+      }
+    
+      .klippekort-top h2 {
+        font-size: 2rem;
+      }
+    
+      .klippekort-top p {
+        font-size: 1.3rem;
+      }
+
+      .online-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; /* <--- centrering ift. venstre tekst */
+      }
+    
+      .online-content ul {
+        width: 65%;
+      }
+    
+      .price-box {
+        margin-top: 0;
+      }
+      
+
+      .coaching-types {
+    grid-template-columns: 1fr 1fr;
+
+
+    
+  }
+
+
+  .pricing-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pricing-column {
+    width: 45%;
+  }
+
+
+  
+
+
+  }
+
+  
