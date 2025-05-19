@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personlig Træning</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-area">
+      <h1><span class="logo-blue">OS</span> - PERFOMANCE CENTER</h1>
+      <p>MED DIG I CENTRUM</p>
+    </div>
+  
+    <nav class="main-nav">
+      <button class="menu-toggle" aria-label="Åbn menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">VELKOMMEN</a></li>
+        <li><a href="personlig.html">PERSONLIG TRÆNING & COACHING</a></li>
+        <li><a href="kropsanalyse.html">INBODY KROPSANALYSE</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="om.html">OM</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main-content">
+    <section class="intro-section">
+      <h2>Velkommen til OS Performance Center</h2>
+      <p>Billede og resten af side kommer her.</p>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>OS PERFORMANCE CENTER</strong></p>
+      <p>Amerika Plads 8A, 2100 København Ø</p>
+      <p><a href="mailto:kontakt@oliversebastian.dk">kontakt@oliversebastian.dk</a></p>
+      <p>+45 27 20 80 32</p>
+    </div>
+  
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/Ospersonligtraening/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/os_performancecenter/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/oliver-sebastian-rosvall-skaalum-986000174/?original_referer=https%3A%2F%2Fwww.oliversebastian.dk%2F" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+
+    
+    
+  
+    <div class="footer-cvr">
+      <p>CVR: 38740393</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+  
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>
+

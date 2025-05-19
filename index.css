@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .intro-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
