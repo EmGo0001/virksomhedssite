@@ -1,0 +1,26 @@
+
+
+.footer {
+    background-color: #3D7A95; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-socials {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .footer-socials img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
