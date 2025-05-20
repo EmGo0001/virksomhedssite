@@ -48,8 +48,13 @@ a {
 .head_line {
   color: #005073;
 }
-
 /* MAIN */
+body {
+  font-family: sans-serif;
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
 
 .tekst1 {
   padding-top: 2rem;
@@ -91,21 +96,10 @@ a:hover {
 
 .billede_book {
   /* max-width: 65ch;
-  border-radius: 1em; */
+border-radius: 1em; */
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.grid_sektion {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  align-items: start;
 }
 
 .h2_grid {
@@ -131,16 +125,22 @@ a:hover i {
   color: #6b8e9e; /* eller din accentfarve */
 }
 
-/* ANMELDELSER */
-
-body {
-  font-family: sans-serif;
-  background: #fff;
-  padding: 2rem;
-  text-align: center;
+@media (width>768px) {
+  .grid_sektion {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    align-items: start;
+  }
 }
 
-.title {
+/* ANMELDELSER */
+
+/* .title {
   font-size: 2rem;
   color: #2c5da5;
 }
@@ -212,4 +212,6 @@ button.next {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-}
+} */
+
+/* BURGER MENU */

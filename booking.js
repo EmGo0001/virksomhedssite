@@ -1,25 +1,33 @@
 
-  const track = document.querySelector(".carousel-track");
-  const next = document.querySelector(".next");
-  const prev = document.querySelector(".prev");
+// BRUGER MENU//
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
 
-  let scrollAmount = 0;
-  const cardWidth = 320; // includes margin
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
 
-  next.addEventListener("click", () => {
-    scrollAmount += cardWidth;
-    track.scrollTo({
-      left: scrollAmount,
-      behavior: "smooth"
-    });
-  });
 
-  prev.addEventListener("click", () => {
-    scrollAmount -= cardWidth;
-    if (scrollAmount < 0) scrollAmount = 0;
-    track.scrollTo({
-      left: scrollAmount,
-      behavior: "smooth"
-    });
-  });
+// ANMELDELSER//
+  
+//   const track = document.querySelector(".carousel-track");
+//   const next = document.querySelector(".next");
+//   const prev = document.querySelector(".prev");
+
+//   let scrollAmount = 0;
+//   const cardWidth = 320; 
+
+//   next.addEventListener("click", () => {
+//     scrollAmount += cardWidth;
+//     track.scrollTo({
+//       left: scrollAmount,
+//       behavior: "smooth"
+//     });
+//   });
+
+
+
+
+
+
 
