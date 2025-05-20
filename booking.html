@@ -20,6 +20,7 @@
       <h3>MED DIG I CENTRUM</h3>
 
       <nav class="menu">
+        <button class="burger" aria-label="Menu">☰</button>
         <ul class="menubar">
           <li>
             <a href="">VELKOMMEN</a>
@@ -174,6 +175,24 @@
       </a>
     </footer>
 
-    <script src="booking.js"></script>
+    <!-- <script src="booking.js"></script> -->
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const menubar = document.querySelector(".menubar");
+      const links = document.querySelectorAll(".menubar a");
+
+      // Toggle menu on burger click
+      burger.addEventListener("click", () => {
+        menubar.classList.toggle("active");
+      });
+
+      // Luk menuen igen når man klikker på et link
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          menubar.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
