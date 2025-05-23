@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400; /* Dette er regular */
+  font-style: normal;
+}
+
+
+.lottie-section {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie-section dotlottie-player {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.intro-section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.about-section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-headline {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-intro,
+.about-outro {
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.forloeb-section {
+  background-color: rgba(0, 80, 115, 0.58);
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.forloeb-title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.forloeb-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+
+.forloeb-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.forloeb-card h3 {
+  color: #005c99;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.forloeb-card p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  flex-grow: 0;
+}
+
+.forloeb-button {
+  background-color: #336b7b;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  margin-top: auto;
+  align-self: center;
+
+}
+
+.forloeb-button:hover {
+  background-color: #29535f;
+}
+
+/* BOOKING */
+.booking-cta {
+  text-align: center;
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.booking-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #3c7b89;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #346873;
+}
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 768px) {
+  .about-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .forloeb-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

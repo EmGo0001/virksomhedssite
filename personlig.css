@@ -5,13 +5,28 @@ body {
     background-color: #f5f5f5;
   }
   
+
+  body, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
   /* Hvid boks med stor tekst */
   .intro-box {
     background-color: white;
-    padding: 100px 50px !important;
+    padding: 100px !important;
     text-align: center;
     
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400; /* Dette er regular */
+    font-style: normal;
+  }
+  
   
   .intro-box h1 {
     font-size: 1.4rem !important;
@@ -20,7 +35,7 @@ body {
   /* Mørkeblå boks */
   .highlight-box {
     background-color: #4C6773;
-    color: black;
+    color: white;
     padding: 40px 30px !important;
     text-align: center;
   }
@@ -47,6 +62,7 @@ body {
     margin-bottom: 1.2rem;
     line-height: 1.5;
     font-size: 1rem;
+    line-height: 40px;
   }
 
   .subscription {
@@ -54,6 +70,7 @@ body {
     background-color: #fefefe;
     color: #333;
     margin-bottom: 59px;
+    padding: 50px;
   }
   
   .subscription h4 {
@@ -76,7 +93,8 @@ body {
   .pricing-cards {
     display: flex;
     flex-direction: column;
-    gap: 140px;
+    gap: 200px;
+    margin: 110px;
   }
   
   .card {
@@ -94,8 +112,8 @@ body {
 
   /* Hele boksen */
 .klippekort-wrapper {
-  margin: 40px 0;
-  max-width: 1000px;
+  margin: 50px 0;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -124,7 +142,7 @@ body {
 
 /* Grå boks med prisinfo */
 .klippekort-bottom {
-  background-color: #f5f5f5;
+  background-color: rgba(245, 245, 241, 1);
   padding: 40px 20px;
   text-align: center;
 }
@@ -139,12 +157,10 @@ body {
 .klippekort-column h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-}
 
-.klippekort-column p {
-  margin: 6px 0;
-  line-height: 1.5;
-}
+  }
+  
+
 
 /* Note nederst */
 .klippekort-note {
@@ -182,8 +198,8 @@ body {
 }
 
 .online-content li {
-  margin-bottom: 1.2rem; /* mere luft mellem punkter */
-  line-height: 1.8;       /* højere linjeafstand */
+  margin-bottom: 1.2rem; 
+  line-height: 1.8;      
 }
 
 /* PRISBOKS */
