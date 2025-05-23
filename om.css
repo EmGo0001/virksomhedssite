@@ -1,129 +1,227 @@
-@media (min-width: 800px) {
-
-/* FØRSTE SEKTION */
-.sec1{
-    text-align: center;
-}
+@media (min-width: 768px) {
 
 
+    @font-face {
+        font-family: antic;
+        src: url(fonts/Antic_Didone/AnticDidone-Regular.ttf);
+    }
 
-/* ANDEN SEKTION */
-.sec2{
-    background-color: rgba(0, 80, 115, 0.58);
-    padding: 50px;
-    color: white;
-    display: flex;
-    line-height: 25px;
-}
+    @font-face {
+        font-family: open;
+        src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    }
 
-#oliver{
-    width: 100%;
-    margin-left: 50%;
-    margin-top: 20%;
-}
+    h1,
+    h3 {
+        font-family: "antic";
+    }
 
+    h2 {
+        font-family: "antic";
+    }
 
-/* TREDJE SEKTION */
-.sec3{
-    text-align: center;
-    padding: 100px;
-    line-height: 50px;
-}
+    p, li{
+        font-family: "open";
+    }
 
-/* GALLERI */
-.galleri{
-    background-color: rgba(0, 80, 115, 0.58);
-    padding: 60px;
-}
+    a{
+        font-family: antic;
+    }
 
-.galleri_layout{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-width: 100%;
-gap: 20px;
-justify-items: center;
-object-fit: cover;
-
-}
+    #footer_mail{
+        font-family: open;
+    }
 
 
-.sec4{
-    padding: 50px;
-    line-height: 25px;
-}
-
-footer{
-    background-color: rgba(0, 80, 115, 0.58);
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 800px) {
     /* FØRSTE SEKTION */
-.sec1{
-    text-align: center;
+    .sec1 {
+        text-align: center;
+        padding: 100px;
+    }
+
+
+    /* ANDEN SEKTION */
+    .sec2 {
+        background-color: rgba(0, 80, 115, 0.58);
+        padding: 50px;
+        color: white;
+        display: flex;
+        line-height: 25px;
+    }
+
+    #oliver {
+        width: 100%;
+        margin-left: 30%;
+        margin-top: 20%;
+    }
+
+
+    /* TREDJE SEKTION */
+    .sec3 {
+        text-align: center;
+        padding: 100px;
+        line-height: 50px;
+    }
+
+    /* GALLERI */
+    .galleri {
+        background-color: #3a758c;
+        padding: 60px;
+    }
+
+    .galleri_layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 80px;
+        justify-items: center;
+        object-fit: cover;
+    }
+
+    /*  FJERDE SEKTION */
+    .sec4 {
+        padding: 50px;
+        line-height: 25px;
+        text-align: justify
+    }
+
+
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+  background-color: #3a758c;
+  color: white;
+  text-align: center;
+}
+
+footer a i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer a:hover i {
+  color: #6b8e9e;
 }
 
 
+@media (max-width: 768px) {
 
-/* ANDEN SEKTION */
-.sec2{
-    background-color: rgba(0, 80, 115, 0.58);
-    padding: 50px;
-    color: white;
-    line-height: 25px;
-}
+    @font-face {
+        font-family: antic;
+        src: url(fonts/Antic_Didone/AnticDidone-Regular.ttf);
+    }
 
-#oliver{
-    width: 100%;
-    padding-top: 20px;
-}
+    @font-face {
+        font-family: open;
+        src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    }
+
+    h1,
+    h3 {
+        font-family: "antic";
+    }
+
+    h2 {
+        font-family: "antic";
+    }
+
+    p,
+    li {
+        font-family: "open";
+    }
+
+
+    /* HEADER */
+
+    h1,
+    #centrum {
+        text-align: center;
+    }
+
+    .menubar {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 2rem 0;
+        justify-content: space-around;
+    }
+
+    .menu {
+        background-color: #3a758c;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        color: white;
+    }
+
+    .head_line {
+        color: #005073;
+    }
+
+
+    /* FØRSTE SEKTION */
+    .sec1 {
+        text-align: center;
+        padding: 50px;
+    }
+
+
+    /* ANDEN SEKTION */
+    .sec2 {
+        background-color: rgba(0, 80, 115, 0.58);
+        padding: 50px;
+        color: white;
+        line-height: 25px;
+    }
+
+    #oliver {
+        width: 70%;
+        padding-top: 20px;
+        justify-content: center;
+        margin: auto;
+        display: block;
+    }
 
 
 
 
-/* TREDJE SEKTION */
-.sec3{
-    text-align: center;
-    padding: 100px;
-    line-height: 35px;
-}
+    /* TREDJE SEKTION */
+    .sec3 {
+        text-align: center;
+        padding: 100px;
+        line-height: 35px;
+    }
 
-/* GALLERI */
-.galleri{
-    background-color: rgba(0, 80, 115, 0.58);
-    padding: 60px;
-}
+    /* GALLERI */
+    .galleri {
+        background-color: rgba(0, 80, 115, 0.58);
+        padding: 40px;
+    }
 
-.galleri_layout{
-display: grid;
-grid-template-columns: 1fr 1fr;
-object-fit: cover;
-width: 100%;
-height: 100%;
-}
-.sec4{
-    padding: 50px;
-    line-height: 25px;
-}
+    .galleri_layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: auto;
+    }
 
-footer{
-    background-color: rgba(0, 80, 115, 0.58);
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
+    /* FJERDE SEKTION */
+    .sec4 {
+        padding: 50px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: rgba(0, 80, 115, 0.58);
+        text-align: center;
+        padding: 20px;
+        color: white;
+        line-height: 3em;
+    }
 }
