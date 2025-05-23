@@ -1,0 +1,18 @@
+/* FOOTER */
+
+footer {
+  margin-top: 4rem;
+  line-height: 1.6;
+  background-color: #3a758c;
+  color: white;
+}
+
+a i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+a:hover i {
+  color: #6b8e9e; /* eller din accentfarve */
+}
