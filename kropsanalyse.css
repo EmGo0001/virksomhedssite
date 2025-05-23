@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "antic";
+  src: url(fonts/AnticDidone-Regular.ttf);
+}
+@font-face {
+  font-family: "open";
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* styler knappen "book her" */
+button {
+  background-color: #3e808e;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "open";
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 70%;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+.grid_2-1 {
+  background-color: #6b8e9e;
+  color: white;
+  padding: 50px;
+  font-family: "open";
+}
+
+.grid_1-2 {
+  background-color: #6b8e9e;
+  padding: 300px;
+  color: white;
+}
+.klippekort-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+.klippekort-bottom {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+.klippekort-top {
+  background-color: #6b99ae;
+  color: black;
+  text-align: center;
+  padding: 2px 2px;
+}
+footer {
+  margin-top: 4rem;
+  line-height: 1.6;
+  background-color: #3a758c;
+  color: white;
+  text-align: center;
+}
+.tekst {
+  padding: 50px;
+}
+
+body {
+  margin: 2em;
+}
+
+@media (width>768px) {
+  /* styler grid 2_1 - første og tredje sektion i grid */
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #6b8e9e;
+    padding: 50px;
+    color: white;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #6b8e9e;
+    padding: 2em;
+    color: white;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f5f1;
+  }
+
+  /* redigere mine billeder i størrelsen */
+  img {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  /* styler min footer */
+  footer {
+    margin-top: 4rem;
+    line-height: 1.6;
+    background-color: #3a758c;
+    color: white;
+  }
+
+  a i {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+  }
+
+  a:hover i {
+    color: #6b8e9e; /* eller din accentfarve */
+  }
+
+  .klippekort-top {
+    background-color: #6b99ae;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .klippekort-top h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .klippekort-top p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  /* Grå boks med prisinfo */
+  .klippekort-bottom {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .klippekort-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+  .klippekort-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .klippekort-column p {
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+
+  /* Note nederst */
+  .klippekort-note {
+    font-size: 0.95rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    display: flex;
+  }
+}
