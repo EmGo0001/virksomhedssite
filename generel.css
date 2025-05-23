@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "antic";
+  src: url(fonts/Antic_Didone/AnticDidone-Regular.ttf);
+}
+
+@font-face {
+  font-family: "open";
+  src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+/* header */
+
+h1,
+h3 {
+  font-family: "antic";
+}
+
+h2 {
+  font-family: "antic";
+}
+
+p {
+  font-family: "open";
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.menubar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 2rem 0;
+  justify-content: space-around;
+}
+
+.menu {
+  background-color: #3a758c;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+
+.head_line {
+  color: #005073;
+}
+
+/* BURGER MENU STYLING */
+
+/* Skjul burger-menu som standard */
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILVISNING */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .menubar {
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a758c;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+  }
+
+  .menubar.active {
+    max-height: 500px; /* stort nok til menuen */
+    padding: 1rem 0;
+  }
+
+  .menubar li {
+    margin: 1rem 0;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3a758c;
+  }
+  .menu {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .burger {
+    margin-left: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+}
+
+.site-header {
+  border: 1px solid #ccc;
+}
+
+.logo-area {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.logo-blue {
+  color: #2271b1;
+}
+
+.logo-area h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo-area p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.main-nav {
+  background-color: #3d7a95;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav li {
+  padding: 30px 10px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Burger-knap */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+/* Mobilvisning */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4c7a91;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .main-nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+
+  .main-nav li {
+    padding: 10px 0;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 4rem;
+  line-height: 1.6;
+  background-color: #3a758c;
+  color: white;
+}
+
+a i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+a:hover i {
+  color: #6b8e9e; /* eller din accentfarve */
+}
+
+footer {
+  background-color: #3d7a95;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-socials img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}

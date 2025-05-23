@@ -1,129 +1,132 @@
 /* Baseline styles – Mobile first */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
 
-  body, p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+body,
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* Hvid boks med stor tekst */
+.intro-box {
+  background-color: white;
+  padding: 100px !important;
+  text-align: center;
+}
 
-  /* Hvid boks med stor tekst */
-  .intro-box {
-    background-color: white;
-    padding: 100px !important;
-    text-align: center;
-    
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400; /* Dette er regular */
+  font-style: normal;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400; /* Dette er regular */
-    font-style: normal;
-  }
-  
-  
-  .intro-box h1 {
-    font-size: 1.4rem !important;
-  }
-  
-  /* Mørkeblå boks */
-  .highlight-box {
-    background-color: #4C6773;
-    color: white;
-    padding: 40px 30px !important;
-    text-align: center;
-  }
-  
-  .highlight-box h2 {
-    font-size: 1.4rem !important;
-    margin: 0;
-  }
+.intro-box h1 {
+  font-size: 1.4rem !important;
+  margin-bottom: 100px;
+}
 
-  .info-box {
-    background-color: #6B99AE;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .info-box h3 {
-    font-size: 1.1rem !important;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .info-box p {
-    margin-bottom: 1.2rem;
-    line-height: 1.5;
-    font-size: 1rem;
-    line-height: 40px;
-  }
+/* Mørkeblå boks */
+.highlight-box {
+  background-color: #4c6773;
+  color: white;
+  padding: 40px 30px !important;
+  text-align: center;
+}
 
-  .subscription {
-    padding: 40px 20px;
-    background-color: #fefefe;
-    color: #333;
-    margin-bottom: 59px;
-    padding: 50px;
-  }
-  
-  .subscription h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .subscription ul {
-    padding-left: 20px;
-    margin-bottom: 2rem;
-  }
-  
-  .subscription li {
-    margin-bottom: 0.8rem;
-    line-height: 1.5;
-  }
-  
-  /* Kort-bokse */
-  .pricing-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-    margin: 110px;
-  }
-  
-  .card {
-    background-color: #6B99AE;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .card h5 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
+.highlight-box h2 {
+  font-size: 1.4rem !important;
+  margin: 0;
+}
 
-  /* Hele boksen */
+.info-box {
+  background-color: #6b99ae;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info-box h3 {
+  font-size: 1.1rem !important;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.info-box p {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.subscription {
+  padding: 40px 20px;
+  background-color: #fefefe;
+  color: #333;
+  margin-bottom: 59px;
+  padding: 50px;
+}
+
+.subscription h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subscription ul {
+  padding-left: 20px;
+  margin-bottom: 2rem;
+}
+
+.subscription li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Kort-bokse */
+.pricing-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin: 110px;
+}
+
+.card {
+  background-color: #6b99ae;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Hele boksen */
 .klippekort-wrapper {
   margin: 50px 0;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
 /* Blå top */
 .klippekort-top {
-  background-color: #6B99AE;
+  background-color: #6b99ae;
   color: black;
   text-align: center;
   padding: 40px 20px;
@@ -157,10 +160,7 @@ body {
 .klippekort-column h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-
-  }
-  
-
+}
 
 /* Note nederst */
 .klippekort-note {
@@ -198,8 +198,8 @@ body {
 }
 
 .online-content li {
-  margin-bottom: 1.2rem; 
-  line-height: 1.8;      
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
 }
 
 /* PRISBOKS */
@@ -208,13 +208,13 @@ body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .price-header {
-  background-color: #4C6773;
+  background-color: #4c6773;
   color: black;
   font-weight: bold;
   padding: 12px;
@@ -228,14 +228,11 @@ body {
   color: #222;
 }
 
-
 .online-disclaimer p {
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
-
 
 .coaching-types {
   display: grid;
@@ -261,11 +258,8 @@ body {
   line-height: 1.6;
 }
 
-
-
-
 .footer {
-  background-color: #3D7A95; 
+  background-color: #3d7a95;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -289,7 +283,6 @@ body {
   object-fit: contain;
 }
 
-
 .pricing-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -298,7 +291,7 @@ body {
 }
 
 .pricing-header {
-  background-color: #6B99AE;
+  background-color: #6b99ae;
   text-align: center;
   padding: 40px 20px;
   color: white;
@@ -310,7 +303,7 @@ body {
 }
 
 .pricing-box {
-  background-color: #F5F5F1;
+  background-color: #f5f5f1;
   padding: 40px 20px;
 }
 
@@ -355,8 +348,6 @@ body {
   line-height: 1.6;
 }
 
-
-
 .pricing-recommendation {
   max-width: 800px;
   margin: 40px auto;
@@ -376,87 +367,79 @@ body {
   line-height: 1.6;
 }
 
-
-  @media screen and (min-width: 768px) {
-    .intro-box h1 {
-      font-size: 2.8rem;
-    }
-  
-    .highlight-box h2 {
-      font-size: 2rem;
-    }
-  
-    .intro-box,
-    .highlight-box {
-      padding: 80px 100px;
-    }
-
-
-    .info-box {
-        padding: 60px 100px;
-      }
-    
-      .info-box h3 {
-        font-size: 1.8rem;
-      }
-    
-      .info-box p {
-        font-size: 1.1rem;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .pricing-cards {
-        flex-direction: row;
-        justify-content: center;
-      }
-    
-      .card {
-        width: 250px;
-      }
-
-
-      .klippekort-columns {
-        flex-direction: row;
-        justify-content: center;
-        gap: 60px;
-      }
-    
-      .klippekort-column {
-        width: 220px;
-      }
-    
-      .klippekort-top h2 {
-        font-size: 2rem;
-      }
-    
-      .klippekort-top p {
-        font-size: 1.3rem;
-      }
-
-      .online-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; /* <--- centrering ift. venstre tekst */
-      }
-    
-      .online-content ul {
-        width: 65%;
-      }
-    
-      .price-box {
-        margin-top: 0;
-      }
-      
-
-      .coaching-types {
-    grid-template-columns: 1fr 1fr;
-
-
-    
+@media screen and (min-width: 768px) {
+  .intro-box h1 {
+    font-size: 2.8rem;
   }
 
+  .highlight-box h2 {
+    font-size: 2rem;
+  }
+
+  .intro-box,
+  .highlight-box {
+    padding: 80px 100px;
+  }
+
+  .info-box {
+    padding: 60px 100px;
+  }
+
+  .info-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .info-box p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .klippekort-columns {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .klippekort-column {
+    width: 220px;
+  }
+
+  .klippekort-top h2 {
+    font-size: 2rem;
+  }
+
+  .klippekort-top p {
+    font-size: 1.3rem;
+  }
+
+  .online-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* <--- centrering ift. venstre tekst */
+  }
+
+  .online-content ul {
+    width: 65%;
+  }
+
+  .price-box {
+    margin-top: 0;
+  }
+
+  .coaching-types {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .pricing-columns {
     flex-direction: row;
@@ -466,11 +449,4 @@ body {
   .pricing-column {
     width: 45%;
   }
-
-
-  
-
-
-  }
-
-  
+}
