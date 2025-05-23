@@ -13,6 +13,8 @@ body {
 
 h2 {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* styler knappen "book her" */
@@ -45,6 +47,8 @@ img {
   background-color: #6b8e9e;
   padding: 300px;
   color: white;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .klippekort-columns {
   display: flex;
@@ -77,6 +81,9 @@ footer {
 
 body {
   margin: 2em;
+}
+.klippekort-wrapper {
+  margin: 30px;
 }
 
 @media (width>768px) {
@@ -141,6 +148,10 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 1px;
+  }
+
+  .klippekort-wrapper {
+    margin: 50px;
   }
 
   /* Grå boks med prisinfo */
