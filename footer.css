@@ -20,14 +20,14 @@ a:hover i {
 
 
 
-.footer {
+footer {
     background-color: #3D7A95; 
     color: white;
     text-align: center;
     padding: 40px 20px;
   }
   
-  .footer a {
+  footer a {
     color: white;
     text-decoration: none;
   }
