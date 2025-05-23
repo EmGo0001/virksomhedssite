@@ -6,6 +6,11 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="booking.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <title>Booking</title>
   </head>
@@ -15,18 +20,19 @@
       <h3>MED DIG I CENTRUM</h3>
 
       <nav class="menu">
+        <button class="burger" aria-label="Menu">☰</button>
         <ul class="menubar">
           <li>
             <a href="">VELKOMMEN</a>
           </li>
           <li>
-            <a href="">PERSONLIG TRÆNING OG COACHING</a>
+            <a href="personlig.html">PERSONLIG TRÆNING OG COACHING</a>
           </li>
           <li>
             <a href="">INBODY KROPSANALYSE</a>
           </li>
           <li>
-            <a href="">BOOKING</a>
+            <a href="booking.html">BOOKING</a>
           </li>
           <li>
             <a href="">OM</a>
@@ -79,53 +85,85 @@
 
       <!-- ANMELDELSER -->
 
-      <div class="testimonial-section">
-        <h3 class="subtitle"><em>Hvad siger tidligere klienter?</em></h3>
+      <section class="anmeldelser">
+        <h2>Hvad siger tidligere klienter?</h2>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="card">
+              <div class="avatar">M</div>
+              <strong class="name">Milos</strong>
 
-        <div class="carousel">
-          <button class="prev">&#10094;</button>
-
-          <div class="carousel-track">
-            <div class="testimonial-card">
-              <div class="profile">
-                <div class="avatar">M</div>
-                <div class="name">Milos</div>
-              </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
               <p>
-                FANTASTISK, BRUGERTILPASSET OPLEVELSE! Jeg fik anbefalet Oliver som personlig træner, og har ikke fortrudt det siden. Det har været en fantastisk oplevelse, hvorfor jeg virkelig kan anbefale Oliver som personlig træner. Oliver er
-                meget lyttende, motiverende og forstående, og sørger for, at både forløbet og træningsprogrammet er tilpasset ens behov. Oliver sørgerede for det hele, så jeg mest effektivt fik opfyldt det efterspurgte, lige fra muskelgrupper,
-                øvelser, teknik mm. Oliver var konstant tilstedeværende i forløbet, og gav også gode råd og anbefalinger undervejs, selv uden for træningssessionerne ved behov. Oliver skal også have stor ros for sit høje faglige niveau og kendskab
-                til kroppen, samt hans rolige og afbalancerede personlighed, der gjorde, at man hver gang så frem til endnu en træningssession. Hver gang blev man autentisk mødt i øjenhøjde. Tak for et godt forløb så langt, og jeg ser frem til endnu
-                flere træningssessioner i fremtiden :)
+                FANTASTISK, BRUGERTILPASSET OPLEVELSE! <br />
+                Jeg fik anbefalet Oliver som personlig træner, og har ikke fortrudt det siden. Det har været en fantastisk oplevelse, hvorfor jeg virkelig kan anbefale Oliver som personlig træner. Oliver er meget lyttende, motiverende og forstående,
+                og sørger for, at både forløbet og træningsprogrammet er tilpasset ens behov. Oliver sørgerede for det hele, så jeg mest effektivt fik opfyldt det efterspurgte, lige fra muskelgrupper, øvelser, teknik mm. Oliver var konstant
+                tilstedeværende i forløbet, og gav også gode råd og anbefalinger undervejs, selv uden for træningssessionerne ved behov. Oliver skal også have stor ros for sit høje faglige niveau og kendskab til kroppen, samt hans rolige og
+                afbalancerede personlighed, der gjorde, at man hver gang så frem til endnu en træningssession. Hver gang blev man autentisk mødt i øjenhøjde. Tak for et godt forløb så langt, og jeg ser frem til endnu flere træningssessioner i
+                fremtiden :)
               </p>
             </div>
+            <div class="card">
+              <div class="avatar">R</div>
+              <strong class="name">Radeen</strong>
 
-            <div class="testimonial-card">
-              <div class="profile">
-                <div class="avatar purple">R</div>
-                <div class="name">Radeen</div>
-              </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
               <p>
+                Bedste træner til en god start <br />
                 Jeg havde Oliver som træner til at hjælpe mig på en god start til at træne og bygge muskler. Han var super hjælpsom, sød og hjalp mig med at forstå de fundamentale ting om at bygge muskler og generelt den bedste måde at træne på. Hvis
                 du vil også begynde med din træningsrejse, så kan Oliver klart anbefales
               </p>
             </div>
+            <div class="card">
+              <div class="avatar">A</div>
+              <strong class="name">Aase</strong>
+              <div class="stars"></div>
 
-            <div class="testimonial-card">
-              <div class="profile">
-                <div class="avatar purple">A</div>
-                <div class="name">Aase</div>
-              </div>
-              <div class="stars">★★★★★</div>
-              <p>Kompetent, smilende, lyttende Oliver er en kompetent, smilende, lyttende og nærværende træner, der presser - uden at overdrive. Tak for at få mig i gang - selv om jeg jo egentlig ikke rigtig gider det der fitness-noget :-)</p>
+              <p>
+                Kompetent, smilende, lyttende <br />
+                Oliver er en kompetent, smilende, lyttende og nærværende træner, der presser - uden at overdrive. Tak for at få mig i gang - selv om jeg jo egentlig ikke rigtig gider det der fitness-noget :-)
+              </p>
+            </div>
+            <div class="card">
+              <div class="avatar">R</div>
+              <strong class="name">Reiko Karasawa</strong>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>
+                Jeg har haft en fantastiske træner <br />
+                Jeg har haft en fantastiske træner, Oliver i Lyngby. Han er meget imødekommende og kompetent træner. Jeg vil gerne anbefale ham til personer med særlig behov eks. problem med ryg og knæ. Jeg er nået langt i behandlingsforløb med hans
+                støtte.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="avatar">M</div>
+              <strong class="name">Marianne Petersen</strong>
+
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>
+                Den perfekte træner <br />
+                OS er den mest perfekte træner ,man kan have. Tålmodighed, dygtig ,presser på den helt rigtige måde. At han så også er flink og klog , hæver det lige yderligere. Kan varmt anbefale OS..
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="avatar">S</div>
+              <strong class="name"> Sarah Mygind</strong>
+
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p>
+                Fantastisk træning <br />
+                Oliver er en virkelig fantastisk træner.Der er stor opmærksomhed på dine individuelle behov, især i forhold til tidligere skader eller andre problemer. Træningsplanen justeres løbende for at sikre, at du altid bliver udfordret på
+                passende vis. Jeg er meget imponeret over, hvor langt jeg er nået på kun fire uger med Olivers hjælp.
+              </p>
             </div>
           </div>
-
-          <button class="next">&#10095;</button>
+          <div class="arrows">
+            <div class="arrow" onclick="moveSlide(-1)">&#8592;</div>
+            <div class="arrow" onclick="moveSlide(1)">&#8594;</div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -152,6 +190,59 @@
       </a>
     </footer>
 
-    <script src="booking.js"></script>
+    <!-- BURGERMENU -->
+    <script>
+      const burger = document.querySelector(".burger");
+      const menubar = document.querySelector(".menubar");
+      const links = document.querySelectorAll(".menubar a");
+
+      // Toggle menu on burger click
+      burger.addEventListener("click", () => {
+        menubar.classList.toggle("active");
+      });
+
+      // Luk menuen igen når man klikker på et link
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          menubar.classList.remove("active");
+        });
+      });
+    </script>
+
+    <!-- ANMELDELSER -->
+    <script>
+      let currentSlide = 0;
+      const track = document.getElementById("carouselTrack");
+      const cards = track.children;
+      const cardsPerPage = 2;
+      const totalCards = cards.length;
+      const totalSlides = Math.ceil(totalCards / cardsPerPage);
+
+      function moveSlide(direction) {
+        currentSlide += direction;
+
+        if (currentSlide < 0) currentSlide = 0;
+        if (currentSlide >= totalSlides) currentSlide = totalSlides - 1;
+
+        const cardWidth = cards[0].offsetWidth + 32; // card width + margin
+        const moveX = cardWidth * cardsPerPage * currentSlide;
+
+        track.style.transform = `translateX(-${moveX}px)`;
+      }
+
+      // optional: resize observer to reset position on window resize
+      window.addEventListener("resize", () => {
+        moveSlide(0); // reposition based on new size
+      });
+
+      function getRandomColor() {
+        const colors = ["#6f42c1", "#20c997", "#fd7e14", "#0d6efd", "#6610f2", "#d63384", "#198754"];
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      document.querySelectorAll(".avatar").forEach((avatar) => {
+        avatar.style.backgroundColor = getRandomColor();
+      });
+    </script>
   </body>
 </html>

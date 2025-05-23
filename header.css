@@ -1,3 +1,117 @@
+
+h1,
+h3 {
+  font-family: "antic";
+}
+
+h2 {
+  font-family: "antic";
+}
+
+p {
+  font-family: "open";
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.menubar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 2rem 0;
+  justify-content: space-around;
+}
+
+.menu {
+  background-color: #3a758c;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+
+.head_line {
+  color: #005073;
+}
+
+/* BURGER MENU STYLING */
+
+/* Skjul burger-menu som standard */
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILVISNING */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .menubar {
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a758c;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+  }
+
+  .menubar.active {
+    max-height: 500px; /* stort nok til menuen */
+    padding: 1rem 0;
+  }
+
+  .menubar li {
+    margin: 1rem 0;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3a758c;
+  }
+  .menu {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .burger {
+    margin-left: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
 body {
     margin: 0;
     font-family: 'Georgia', serif;
@@ -95,4 +209,4 @@ body {
       padding: 10px 0;
     }
   }
-  
+ 

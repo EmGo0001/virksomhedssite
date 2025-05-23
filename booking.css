@@ -51,6 +51,12 @@ a {
 
 /* MAIN */
 
+body {
+  background: #fff;
+  text-align: center;
+  margin: 0;
+}
+
 .tekst1 {
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -91,21 +97,10 @@ a:hover {
 
 .billede_book {
   /* max-width: 65ch;
-  border-radius: 1em; */
+border-radius: 1em; */
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.grid_sektion {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  align-items: start;
 }
 
 .h2_grid {
@@ -133,83 +128,155 @@ a:hover i {
 
 /* ANMELDELSER */
 
-body {
-  font-family: sans-serif;
-  background: #fff;
-  padding: 2rem;
-  text-align: center;
+.anmeldelser.h2 {
+  font-family: "antic";
 }
 
-.title {
-  font-size: 2rem;
-  color: #2c5da5;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.carousel {
+.carousel-container {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem 0;
 }
 
 .carousel-track {
   display: flex;
-  overflow: hidden;
-  width: 600px;
-  scroll-behavior: smooth;
+  transition: transform 0.5s ease;
+  width: 100%;
 }
 
-.testimonial-card {
-  min-width: 300px;
-  margin: 0 10px;
-  background: #fff;
-  border-radius: 8px;
+.card {
+  flex: 0 0 50%; /* to kort pr. slide */
+  box-sizing: border-box;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  text-align: left;
+  margin: 0 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile {
+.card p {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.anmeldelser {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.arrows {
   display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 1rem auto 0 auto;
+}
+
+.arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .avatar {
-  background: #999;
-  color: #fff;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
-}
-
-.avatar.purple {
-  background: purple;
-}
-
-.name {
   font-weight: bold;
+  color: white;
+  font-size: 18px;
+  margin-right: 0.5rem;
+  background-color: #555; /* fallback-farve */
 }
 
-.stars {
-  color: orange;
-  margin-bottom: 0.5rem;
-}
+/* BURGER MENU STYLING */
 
-button.prev,
-button.next {
+/* Skjul burger-menu som standard */
+.burger {
+  display: none;
+  font-size: 2rem;
   background: none;
   border: none;
-  font-size: 2rem;
+  color: white;
   cursor: pointer;
+}
+
+/* MOBILVISNING */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .menubar {
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a758c;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+  }
+
+  .menubar.active {
+    max-height: 500px; /* stort nok til menuen */
+    padding: 1rem 0;
+  }
+
+  .menubar li {
+    margin: 1rem 0;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3a758c;
+  }
+  .menu {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .burger {
+    margin-left: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media (width>768px) {
+  .grid_sektion {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    align-items: start;
+  }
 }
